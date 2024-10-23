@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+header {
+    background: #1a1a1a;
+    color: #4CAF50; /* Verde mais suave */
+    padding: 20px 0;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #4CAF50; /* Verde mais suave */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #388e3c; /* Verde mais escuro ao passar o mouse */
+}
+
+.hero {
+    background: url('https://source.unsplash.com/1600x900/?futuristic,health') no-repeat center center/cover;
+    color: #fff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #4CAF50; /* Verde mais suave */
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.sobre, .beneficios, .depoimentos, .compra {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.icon-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.icon-item {
+    margin: 0 20px;
+    text-align: center;
+}
+
+.icon-item i {
+    font-size: 3em;
+    color: #4CAF50; /* Verde mais suave */
+}
+
+.benefit-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.benefit-item {
+    background: #1a1a1a;
+    border: 1px solid #4CAF50;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    width: calc(25% - 40px);
+    text-align: center;
+}
+
+.benefit-item h3 {
+    color: #4CAF50; /* Verde mais suave */
+}
+
+.testimonial {
+    background: #1a1a1a;
+    border-left: 5px solid #4CAF50;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+    color: #4CAF50; /* Verde
+
+    footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+    color: #4CAF50; /* Verde mais suave */
+}
+
+footer .social-icons {
+    margin: 10px 0;
+}
+
+footer .social-icons a {
+    color: #4CAF50; /* Verde mais suave */
+    margin: 0 10px;
+    font-size: 1.5em;
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Adicionando classes para animações de entrada */
+.hero, .sobre, .beneficios, .depoimentos, .compra {
+    opacity: 0;
+    animation: fadeIn 1s forwards; /* Aparece de forma suave */
+}
+
+.sobre {
+    animation-delay: 0.2s; /* Atraso para a seção sobre */
+}
+
+.beneficios {
+    animation-delay: 0.4s; /* Atraso para a seção de benefícios */
+}
+
+.depoimentos {
+    animation-delay: 0.6s; /* Atraso para a seção de depoimentos */
+}
+
+.compra {
+    animation-delay: 0.8s; /* Atraso para a seção de compra */
+}
